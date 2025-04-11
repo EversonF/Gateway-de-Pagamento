@@ -4,7 +4,12 @@ import (
 	"log"
 	"fmt"
 	"os"
+	"github.com/devfullcycle/go-gateway-api/internal/web/server"
+	"github.com/devfullcycle/go-gateway-api/internal/service"
+	"github.com/devfullcycle/go-gateway-api/internal/repository"
 	"github.com/joho/godotenv"
+	_"github.com/lib/pq"
+	"database/sql"
 )
 
 func getEnv(key string, defaultValue string) string {
